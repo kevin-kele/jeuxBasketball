@@ -66,8 +66,7 @@ const update=()=>{
 }
 let anim = function(){
     update()
-    // setInterval(update,100)
-    // clearInterval(update,1000)
+    setInterval(update,100)
 }
 anim()
 
