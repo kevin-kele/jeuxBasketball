@@ -12,22 +12,13 @@ var x = 75;
 
 
 class Ball {
-<<<<<<< HEAD
-    constructor(xpoint,ypoint,raduis,color,moove){
-=======
     constructor(xpoint,ypoint,raduis,color){
->>>>>>> mooving ball
         this.xpoint = xpoint;
         this.ypoint = ypoint;
         this.raduis = raduis;
         this.color = color;
-<<<<<<< HEAD
-        this.dx = 1*this.moove;
-        this.dy = 1*this.moove
-=======
         this.dx = 1;
         this.dy = 1
->>>>>>> mooving ball
     }
 
     draw(ctx){
@@ -37,7 +28,6 @@ class Ball {
         ctx.fill();
         ctx.stroke();
         ctx.closePath();
-<<<<<<< HEAD
     }
 
     update(){
@@ -65,7 +55,7 @@ const update=()=>{
     ballon.xpoint += ballon.dx;
 }
 let anim = function(){
-    update()
+    
     setInterval(update,100)
 }
 anim()
