@@ -30,24 +30,10 @@ class Ball {
         ctx.closePath();
     }
 
-    update(){
-        this.draw(ctx);
-        this.xpoint += this.dx;
-        this.ypoint += this.dy;
-    }
-
 
 }
 let ballon = new Ball(100,200,100,'red');
-ballon.draw(ctx);
 
-let anim = function(){
-    requestAnimationFrame(anim)
-    ballon.update()
-        console.log(this.xpoint)
-    }
-
-let ballon = new Ball(100,200,100,'red');
 
 
 const update=()=>{
